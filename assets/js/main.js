@@ -3,8 +3,8 @@
 function calcNumbers(num) {
     form.displayResult.value=form.displayResult.value+num;
 }
-// The function clear() to clear on the values in the display
-function clear(num) {
+// The function clearDisplay() to clear on the values in the display
+function clearDisplay(num) {
   if (form.displayResult.value != '') {
       form.displayResult.value = '';
   }
