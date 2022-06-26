@@ -4,12 +4,13 @@ function calcNumbers(num) {
     form.displayResult.value=form.displayResult.value+num;
 }
 // The function clear() to clear on the values in the display
-const clear = () => {
-    result = '';
-    updateDisplay();
+function clear(num) {
+  if (form.displayResult.value != '') {
+      form.displayResult.value = '';
   }
+}
 
-// Refreshing the display
-const updateDisplay = () => {
-    displayResult.value = result;
-  };
+// The function deleteSingle() to delete a single value
+function delSingleNumber(num) {
+  form.displayResult.value = form.displayResult.value.substr(0, form.displayResult.value.length - 1);
+}
